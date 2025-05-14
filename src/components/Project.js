@@ -1,4 +1,4 @@
-import { Link } from "gatsby";
+import { Link, withPrefix } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React from "react";
 
@@ -15,7 +15,7 @@ export default function Project({
   const image = getImage(imageSrc);
 
   return (
-    <Link to={`/project/${slug}`} className="block mb-32 md:mb-0">
+    <Link to={withPrefix(`/project/${slug}`)} className="block mb-32 md:mb-0">
       <div className="w-full flex items-center justify-center h-auto md:min-h-[75vh]">
         <div className="w-[90%] lg:w-[80%] flex items-center justify-center py-4 md:py-0">
           <div
@@ -59,6 +59,8 @@ export default function Project({
                     image={image}
                     alt={imageAlt}
                     className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 h-full w-full"
+                    imgStyle={{ objectFit: "cover" }}
+                    loading="eager"
                   />
                 ) : (
                   <img

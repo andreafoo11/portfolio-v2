@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import Project from "../components/Project";
 import SideMenu from "../components/SideMenu";
 import SplineScene from "../components/SplineScene";
+
 export const query = graphql`
   query {
     weBelongImage: file(relativePath: { eq: "WeBelong/weBelongHeader.png" }) {
@@ -295,9 +296,8 @@ function IndexPage({ data }) {
             />
           </div>
           <Link
-            href="/about"
+            to="/about"
             className="text-2xl text-center py-16 block mx-auto w-full parallax"
-            data-speed="3"
           >
             Learn more about my experiences →
           </Link>

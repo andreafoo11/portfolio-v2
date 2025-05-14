@@ -2,15 +2,15 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  // pathPrefix: "/portfolio-v2",
+  pathPrefix: "/portfolio-v2",
   siteMetadata: {
     title: `website`,
+    siteUrl: `https://andreafoo11.github.io/portfolio-v2/`,
   },
   plugins: [
     "gatsby-plugin-postcss",
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -57,6 +57,12 @@ module.exports = {
         theme_color: `#151515`,
         display: `standalone`,
         icon: `src/images/icon.png`, // Path to your icon file
+      },
+    },
+    {
+      resolve: `gatsby-plugin-image`,
+      options: {
+        pathPrefix: "/portfolio-v2",
       },
     },
   ],

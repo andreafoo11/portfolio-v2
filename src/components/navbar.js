@@ -5,7 +5,7 @@ const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleResumeClick = () => {
-    window.open("/AndreaFooResume.pdf", "_blank");
+    window.open(`${__PATH_PREFIX__}/AndreaFooResume.pdf`, "_blank");
   };
 
   return (
