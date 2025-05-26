@@ -92,7 +92,7 @@ const Tlab = () => {
             Based on this analysis, three primary areas were identified for
             initial focus:
           </p>
-          <div className="flex justify-center items-center gap-4 mb-8 mt-8">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-8 mt-8">
             <div
               className="rounded-lg px-6 py-3"
               style={{ backgroundColor: "#7C8BC3", color: "#232A45" }}
