@@ -59,7 +59,7 @@ const ModeloRelaunch = () => {
             The Objective for this relaunch can be broken down into three parts:
           </p>
         </div>
-        <div className="flex flex-row gap-4 justify-center pt-8">
+        <div className="flex flex-col md:flex-row gap-4 justify-center pt-8">
           <CenteredIconHeaderDescription
             icon={ModeloRelaunch1}
             header="Product Improvement"
@@ -178,34 +178,34 @@ const ModeloRelaunch = () => {
           <img
             src={ModeloRelaunchMetrics1}
             alt="Modelo Relaunch Metrics"
-            style={{ width: "20%", margin: "0 80px" }}
+            style={{ width: "20%", margin: "0 50px" }}
           />
           <img
             src={ModeloRelaunchMetrics2}
             alt="Modelo Relaunch Metrics"
-            style={{ width: "20%", margin: "0 80px" }}
+            style={{ width: "20%", margin: "0 50px" }}
           />
           <img
             src={ModeloRelaunchMetrics3}
             alt="Modelo Relaunch Metrics"
-            style={{ width: "20%", margin: "0 80px" }}
+            style={{ width: "20%", margin: "0 50px" }}
           />
         </div>
         <div className="flex flex-row justify-center items-center">
           <img
             src={ModeloRelaunchMetrics4}
             alt="Modelo Relaunch Metrics"
-            style={{ width: "20%", margin: "0 80px" }}
+            style={{ width: "20%", margin: "0 50px" }}
           />
           <img
             src={ModeloRelaunchMetrics5}
             alt="Modelo Relaunch Metrics"
-            style={{ width: "20%", margin: "0 80px" }}
+            style={{ width: "20%", margin: "0 50px" }}
           />
           <img
             src={ModeloRelaunchMetrics6}
             alt="Modelo Relaunch Metrics"
-            style={{ width: "20%", margin: "0 80px" }}
+            style={{ width: "20%", margin: "0 50px" }}
           />
         </div>
       </div>

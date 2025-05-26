@@ -153,7 +153,7 @@ const ModeloB2C = () => {
           </span>
           : 
         </p>
-        <div className="flex flex-row gap-16 justify-center items-center mt-8">
+        <div className="flex flex-col md:flex-row gap-16 justify-center items-center mt-8">
           <div className="flex flex-col items-center">
             <h2 className="text-5xl font-bold">17%</h2>
             <p className="text-center">
@@ -201,7 +201,7 @@ const ModeloB2C = () => {
             <br />
             This was achieved through the implementation of two key elements:
           </p>
-          <div className="flex flex-row gap-8 justify-center items-center mt-8">
+          <div className="flex flex-col md:flex-row gap-8 justify-center items-center mt-8">
             <img src={onboarding1} alt="Onboarding 1" className="rounded-lg" />
             <div className="flex flex-col gap-8 justify-center mt-8">
               <h2 className="text-2xl font-bold">Onboarding Questionnaire</h2>
@@ -215,7 +215,7 @@ const ModeloB2C = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-row gap-8 justify-center items-center mt-8">
+          <div className="flex flex-col md:flex-row gap-8 justify-center items-center mt-8">
             <div className="flex flex-col gap-8 justify-center mt-8">
               <h2 className="text-2xl font-bold">Onboarding Guide</h2>
               <p>
