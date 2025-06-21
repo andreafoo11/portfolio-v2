@@ -2,10 +2,9 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  pathPrefix: "/portfolio-v2",
   siteMetadata: {
     title: `website`,
-    siteUrl: `https://andreafoo11.github.io/portfolio-v2/`,
+    siteUrl: `https://andreafoo.com/`,
   },
   plugins: [
     "gatsby-plugin-postcss",
@@ -61,9 +60,6 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-image`,
-      options: {
-        pathPrefix: "/portfolio-v2",
-      },
     },
   ],
 };
