@@ -27,7 +27,7 @@ const ModeloB2C = () => {
         <div className="space-y-6">
           <p>
             Modelo is a 3D model viewing software that allows users to easily
-            view their 3D models of any different formats online and share with
+            view their 3D models in many different formats online and share with
             other people without the need for bulky software like Revit. 
           </p>
         </div>
@@ -50,7 +50,7 @@ const ModeloB2C = () => {
             </span>{" "}
             A key factor contributing to this low retention rate was identified
             as the product's origin as a B2B offering. A B2B offering with a
-            Product Led Growth Strategy simply did not make sense. Not only was
+            product-led growth strategy simply did not make sense. Not only was
             our product too complicated for simple consumers, it was also
             slightly above a normal price point a consumer would be willing to
             pay.
@@ -160,7 +160,7 @@ const ModeloB2C = () => {
               highest{" "}
               <span style={{ color: "#F75223" }}>
                 {" "}
-                week on week user retention
+                week-over-week user retention
               </span>{" "}
               after revamping the entire workspace
             </p>
@@ -247,8 +247,8 @@ const ModeloB2C = () => {
             </p>
           </div>
           <p className="mt-8">
-            As a result of the new user onboarding, we had better understanding
-            of our users with the new user onboarding questionnaire
+            As a result of the new user onboarding, we gained a better
+            understanding of our users through the onboarding questionnaire.
           </p>
           <img src={results1} alt="Results 3" className="mt-8" />
         </div>
@@ -301,7 +301,7 @@ const ModeloB2C = () => {
             />
           </div>
           <p className="mt-8">
-            To address this, we aimed to create a more enhanced and intuitive
+            To address this, we aimed to create a more intuitive and enhanced
             user experience. We observed that individual users primarily used
             Modelo as a visualization tool, while larger teams and companies
             utilized it for both visualization and asset management
@@ -342,7 +342,7 @@ const ModeloB2C = () => {
             >
               25%{" "}
             </span>
-            increase in total number in paid users and leading to a marked
+            increase in the total number of paid users, leading to a marked
             increase in overall monthly revenue.
           </p>
         </div>
@@ -360,7 +360,7 @@ const ModeloB2C = () => {
             <IconHeaderDescription
               icon={takeaway1}
               header="How to Engage Users"
-              description="Strategizing different ways of reaching users through analyzing their current behaviors using the product and providing incentives that would  draw them in. This was applied when I was inviting users to be part of user interviews and to join or core slack group."
+              description="Strategizing different ways of reaching users through analyzing their current behaviors using the product and providing incentives that would draw them in. This was applied when I invited users to take part in interviews and join our core Slack group."
             />
           </div>
           <div className="flex-1 basis-1/3 max-w-[33%]">

@@ -266,7 +266,7 @@ function IndexPage({ data }) {
               title="Basil App"
               number="05"
               description="A family recipe sharing app where people are able to upload personal recipes and share with friends and family."
-              tags={["Project Management", "Uesr Interview", "Wireframing"]}
+              tags={["Project Management", "User Interview", "Wireframing"]}
               inverted={false}
               slug="basil"
             />

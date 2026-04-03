@@ -15,7 +15,7 @@ const Tlab = () => {
           <p>
             T-Lab Education, an EdTech startup based in Shanghai, China, focused
             on building an educational technology platform for pre-K-12
-            students. During my six-month, full-stack software engineering
+            students. During my six-month full-stack software engineering
             internship in 2021, I collaborated with the marketing and operations
             team to optimize the promotional process for the web app.
           </p>
@@ -32,7 +32,7 @@ const Tlab = () => {
           <p>
             The marketing and operations team at this pre-launch startup was
             preoccupied with developing and implementing promotional strategies
-            for their web app. As the full-stack engineer dedicated their
+            for their web app. As the full-stack engineers dedicated their
             efforts to the web app's development, the marketing team focused on
             building product awareness. During my internship at this startup, I
             was granted significant creative freedom by my manager and mentor. I

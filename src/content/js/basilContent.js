@@ -65,7 +65,7 @@ const BasilProject = ({ data }) => {
           <p className="text-white">
             We were interested in discovering how we can help young adults learn
             necessary life skills as they enter the workforce and maintain a
-            work life balance, but with a possible finance focus in mind.
+            work-life balance, with a possible finance focus in mind.
           </p>
         </div>
       </div>
@@ -115,11 +115,7 @@ const BasilProject = ({ data }) => {
               for students. To address this, we aimed to develop a
               recipe-sharing app that fosters connection through the shared
               language of food, allowing students to experience the comforting
-              flavors of home.User interviews revealed that family disconnect
-              was a major issue for students. To address this, we aimed to
-              develop a recipe-sharing app that fosters connection through the
-              shared language of food, allowing students to experience the
-              comforting flavors of home.
+              flavors of home.
             </p>
           </div>
 

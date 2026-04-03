@@ -94,14 +94,13 @@ const WeBelongProject = ({ data }) => {
           <div className="flex flex-wrap gap-16 justify-center">
             <ProblemSpaceDetails
               icon={WeBelongPSIcon1}
-              heading="Gender gap in STEM starts in   School"
+              heading="Gender gap in STEM starts in school"
               description="Many girls in Asia encounter psychological, familial, and pedagogical barriers in engaging with STEM subjects."
             />
             <ProblemSpaceDetails
               icon={WeBelongPSIcon2}
               heading="Glass ceiling for Asian women in STEM leadership"
-              description="Asian women are the least likely to get promoted to managerial positions
-1 in 285 Asian women in Silicon valley was an executive (compared to 1 in 123 white women and 1 in 87 white men). "
+              description="Asian women are the least likely to get promoted to managerial positions. Only 1 in 285 Asian women in Silicon Valley was an executive (compared to 1 in 123 white women and 1 in 87 white men)."
             />
             <ProblemSpaceDetails
               icon={WeBelongPSIcon3}
@@ -163,7 +162,7 @@ const WeBelongProject = ({ data }) => {
           Title="Version 3: Wireframe on Figma"
           DesignProcessImage1={WebelongDesignProcess5}
           DesignProcessImage2={WebelongDesignProcess6}
-          UserFeedback=" Experts in the industries may not feel comfortable posting videos, having other ways to show representation in the industry would be helpful"
+          UserFeedback="Experts in the industries may not feel comfortable posting videos; having other ways to show representation in the industry would be helpful."
         />
       </div>
 
@@ -178,7 +177,7 @@ const WeBelongProject = ({ data }) => {
             After numerous iterations and refinements, we successfully developed
             a Minimum Viable Product (MVP). The MVP is an app that allows users
             to share career advice, connect with career-forward women, and watch
-            videos that allow for career exploration.This MVP was then subjected
+            videos that allow for career exploration. This MVP was then subjected
             to rigorous testing with a select group of potential users, allowing
             us to gather valuable feedback and insights.
           </p>

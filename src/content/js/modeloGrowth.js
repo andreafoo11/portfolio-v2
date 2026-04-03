@@ -25,7 +25,7 @@ const ModeloGrowthHacking = () => {
         <div className="space-y-6">
           <p>
             Modelo is a 3D model viewing software that allows users to easily
-            view their 3D models of any different formats online and share with
+            view their 3D models in many different formats online and share with
             other people without the need for bulky software like Revit. 
           </p>
         </div>
@@ -111,7 +111,7 @@ const ModeloGrowthHacking = () => {
           />
           <ProcessCard
             number="2"
-            title="In-depth product Tutorials and Guides"
+            title="In-Depth Product Tutorials and Guides"
             description="We created tutorial videos posted on YouTube to have detailed explanations on how to use features, giving users a resource they could access at any time and at their own pace."
             inverted={false}
           />
@@ -158,14 +158,14 @@ const ModeloGrowthHacking = () => {
           with shared models into active users of our platform. <br />
           <br />
           To achieve this, I focused on improving our existing share
-          functionality by concentrating on two key areas and AB testing them:
+          functionality by concentrating on two key areas and A/B testing them:
         </p>
         <div className="flex flex-row gap-8 justify-center items-start w-full">
           <div className="flex-1 basis-1/2 max-w-[48%]">
             <CenteredIconHeaderDescription
               icon={process1}
               header="Enhanced User Interface"
-              description="We tested out a new user interface by setting up an AB test. The user interface for sharing was redesigned to be more intuitive and user-friendly. This included simplifying the steps involved in sharing, providing clear visual cues, and optimizing the experience for different devices and screen sizes."
+              description="We tested a new user interface by setting up an A/B test. The sharing interface was redesigned to be more intuitive and user-friendly. This included simplifying the steps involved in sharing, providing clear visual cues, and optimizing the experience for different devices and screen sizes."
             />
           </div>
           <div className="flex-1 basis-1/2 max-w-[48%]">
@@ -208,13 +208,13 @@ const ModeloGrowthHacking = () => {
             <h2 className="text-5xl font-bold">20%</h2>
             <p className="text-center">
               increase in <span style={{ color: "#F75223" }}>new users</span>{" "}
-              week on week
+              week-over-week
             </p>
           </div>
         </div>
 
         <p className="mt-8">
-          This was an example of successful AB testing where we found that this
+          This was an example of successful A/B testing where we found that this
           feature improvement greatly enhanced our product user acquisition.
           Realizing this, we quickly rolled out this feature to the rest of our
           users.{" "}

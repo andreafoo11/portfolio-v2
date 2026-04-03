@@ -125,7 +125,7 @@ const ScaMicroservice = () => {
         <p>
           The result of this project is a new microservice that should improve
           supply allocation during busy periods. This will allow for more
-          optimized pickup times and a better overall uber experience for all
+          optimized pickup times and a better overall Uber experience for all
           users. My contributions to this project will be built upon by other
           engineers in the future.
         </p>
@@ -140,7 +140,7 @@ const ScaMicroservice = () => {
         <h2 className="text-3xl font-bold mb-8">Takeaways</h2>
         <p>
           I spearheaded the development of a new microservice, gaining hands-on
-          experience in GO backend service development and proficiency in key
+          experience in Go backend service development and proficiency in key
           technologies like Docker, Kubernetes, and gRPC. While the project was
           successful, it highlighted my preference for frontend and design work,
           solidifying my resolve to concentrate on those areas in my future

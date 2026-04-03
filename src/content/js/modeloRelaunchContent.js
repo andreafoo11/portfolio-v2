@@ -25,7 +25,7 @@ const ModeloRelaunch = () => {
         <div className="space-y-6">
           <p>
             Modelo is a 3D model viewing software that allows users to easily
-            view their 3D models of any different formats online and share with
+            view their 3D models in many different formats online and share with
             other people without the need for bulky software like Revit. 
           </p>
         </div>
@@ -41,7 +41,7 @@ const ModeloRelaunch = () => {
           <p>
             Despite its 2014 launch, Modelo, a small product within our parent
             company Coohom, had received limited resources and development
-            attention. However, upon my joining in 2013, the company decided to
+            attention. However, upon my joining in 2023, the company decided to
             relaunch Modelo 2.0 in the US, and I was actively involved in this
             effort.
           </p>
@@ -56,7 +56,7 @@ const ModeloRelaunch = () => {
         <h2 className="text-3xl font-bold mb-8">Objective</h2>
         <div className="space-y-6">
           <p>
-            The Objective for this relaunch can be broken down into three parts:
+            The objective for this relaunch can be broken down into three parts:
           </p>
         </div>
         <div className="flex flex-col md:flex-row gap-4 justify-center pt-8">
@@ -114,7 +114,7 @@ const ModeloRelaunch = () => {
             <ProcessCard
               number="3"
               title="Creation of Marketing Videos"
-              description="Collaborated with designer to created marketing videos to convey the value propositions "
+              description="Collaborated with a designer to create marketing videos that conveyed the value propositions."
               inverted={true}
             />
             <ProcessCard
