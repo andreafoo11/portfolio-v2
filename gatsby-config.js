@@ -1,7 +1,12 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+// Custom domain (e.g. andreafoo.com): keep pathPrefix off — GitHub serves the site at the domain root.
+// github.io only (no custom domain): set GATSBY_USE_GITHUB_IO_PATH=true in the deploy workflow.
+const useGithubIoSubpath = process.env.GATSBY_USE_GITHUB_IO_PATH === "true";
+
 module.exports = {
+  ...(useGithubIoSubpath ? { pathPrefix: "/portfolio-v2" } : {}),
   siteMetadata: {
     title: `website`,
     siteUrl: `https://andreafoo.com/`,

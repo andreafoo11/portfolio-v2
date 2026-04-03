@@ -21,8 +21,17 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # Custom domain (andreafoo.com) is served from the site root — no path prefix.
+      # Set GATSBY_USE_GITHUB_IO_PATH=true only if you rely on https://<user>.github.io/<repo>/ with no custom domain.
       - name: Build
-        run: npm run build -- --prefix-paths
+        env:
+          GATSBY_USE_GITHUB_IO_PATH: "false"
+        run: |
+          if [ "$GATSBY_USE_GITHUB_IO_PATH" = "true" ]; then
+            npm run build -- --prefix-paths
+          else
+            npm run build
+          fi
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -30,3 +39,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
+          cname: andreafoo.com

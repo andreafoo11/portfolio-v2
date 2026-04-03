@@ -1,11 +1,11 @@
-import { Link } from "gatsby";
+import { Link, withPrefix } from "gatsby";
 import React, { useState } from "react";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleResumeClick = () => {
-    window.open(`/AndreaFooResume.pdf`, "_blank");
+    window.open(withPrefix(`/AndreaFooResume.pdf`), "_blank");
   };
 
   return (
