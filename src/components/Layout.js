@@ -8,7 +8,7 @@ export default function Layout({ children }) {
       style={{ backgroundColor: "#151515" }}
     >
       <NavBar />
-      <main className="container mx-auto px-4 py-8">{children}</main>
+      <main className="w-full max-w-none">{children}</main>
     </div>
   );
 }

@@ -2,11 +2,10 @@ import { motion } from "framer-motion"; // Make sure to npm install framer-motio
 import { graphql, Link } from "gatsby";
 import React, { useEffect } from "react";
 import Footer from "../components/Footer";
-import Intro from "../components/intro";
 import Layout from "../components/Layout";
 import Project from "../components/Project";
 import SideMenu from "../components/SideMenu";
-import SplineScene from "../components/SplineScene";
+import HeroMesh from "../components/HeroMesh";
 
 export const query = graphql`
   query {
@@ -139,47 +138,62 @@ function IndexPage({ data }) {
 
   return (
     <div
-      className="min-h-screen text-white pt-16 flex flex-col"
+      className="flex min-h-screen flex-col text-white"
       style={{ backgroundColor: "#151515" }}
     >
       <Layout>
         <SideMenu />
 
-        <div id="intro" className="relative h-[80vh]">
-          <SplineScene />
-        </div>
-        <motion.div
-          className="flex flex-col items-center mb-12 z-10"
-          animate={{ y: [0, 10, 0] }}
-          transition={{
-            duration: 1.5,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
+        <section
+          id="intro"
+          className="relative min-h-screen w-full overflow-hidden bg-[#151515]"
         >
-          <p className="text-sm mb-2">Scroll for more</p>
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
-          </svg>
-        </motion.div>
-        <br />
-        <br />
-        <Intro />
-        <br />
-        <br />
-        <h2 className="text-3xl leading-relaxed text-gray-300 uppercase text-center">
+          <HeroMesh />
+          <div className="relative z-10 mx-auto flex min-h-screen max-w-3xl flex-col px-6 pt-24 text-center md:px-10 md:pt-28">
+            <div className="flex flex-1 flex-col justify-center gap-10 py-8 md:gap-12 md:py-12">
+              <h1 className="text-3xl font-extralight tracking-tight text-white md:text-4xl md:tracking-tighter lg:text-5xl">
+                Andrea Foo
+              </h1>
+              <p className="mx-auto max-w-2xl text-base font-light leading-relaxed text-white/65 md:text-lg md:leading-relaxed">
+                Product manager with roots in Computer Science and Education. I
+                turn messy problems into clear products—balancing what users
+                need, what design promises, and what engineering can ship.
+              </p>
+            </div>
+
+            <motion.div
+              className="flex flex-col items-center pb-10 pt-4"
+              animate={{ y: [0, 10, 0] }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            >
+              <p className="mb-2 text-sm text-white/50">Scroll for more</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                className="text-white/50"
+              >
+                <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+              </svg>
+            </motion.div>
+          </div>
+        </section>
+
+        <div className="container mx-auto px-4 py-10">
+        <div id="projects" className="scroll-mt-24">
+        <h2 className="text-center text-3xl uppercase leading-relaxed text-gray-300">
           all projects
         </h2>
 
         {/* Projects Menu Bar */}
-        <div className="max-w-5xl mx-auto my-8 parallax" data-speed="1.5">
+        <div className="mx-auto my-8 max-w-5xl parallax" data-speed="1.5">
           <div className="flex flex-wrap justify-center gap-3">
             {[...projects].reverse().map((project, index) => (
               <Link
@@ -191,6 +205,7 @@ function IndexPage({ data }) {
               </Link>
             ))}
           </div>
+        </div>
         </div>
 
         {/* Existing Projects Grid */}
@@ -303,6 +318,7 @@ function IndexPage({ data }) {
           </Link>
         </div>
         <Footer />
+        </div>
       </Layout>
     </div>
   );
