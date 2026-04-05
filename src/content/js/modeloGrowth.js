@@ -1,18 +1,18 @@
 import React from "react";
-import CenteredIconHeaderDescription from "/src/components/CenteredIconHeaderDescription";
-import IconHeaderDescription from "/src/components/icon-header-description";
-import IconHeader from "/src/components/IconHeader";
-import NumberComponent from "/src/components/NumberComponent";
-import ProcessCard from "/src/components/ProcessCard";
-import objective1 from "/src/images/modeloGrowth/objective1.png";
-import objective2 from "/src/images/modeloGrowth/objective2.png";
-import objective3 from "/src/images/modeloGrowth/objective3.png";
-import process1 from "/src/images/modeloGrowth/process1.png";
-import process2 from "/src/images/modeloGrowth/process2.png";
-import process3 from "/src/images/modeloGrowth/process3.png";
-import takeaway1 from "/src/images/modeloGrowth/takeaway1.png";
-import takeaway2 from "/src/images/modeloGrowth/takeaway2.png";
-import takeaway3 from "/src/images/modeloGrowth/takeaway3.png";
+import CenteredIconHeaderDescription from "../../components/CenteredIconHeaderDescription";
+import IconHeaderDescription from "../../components/icon-header-description";
+import IconHeader from "../../components/IconHeader";
+import NumberComponent from "../../components/NumberComponent";
+import ProcessCard from "../../components/ProcessCard";
+import objective1 from "../../images/modeloGrowth/objective1.png";
+import objective2 from "../../images/modeloGrowth/objective2.png";
+import objective3 from "../../images/modeloGrowth/objective3.png";
+import process1 from "../../images/modeloGrowth/process1.png";
+import process2 from "../../images/modeloGrowth/process2.png";
+import process3 from "../../images/modeloGrowth/process3.png";
+import takeaway1 from "../../images/modeloGrowth/takeaway1.png";
+import takeaway2 from "../../images/modeloGrowth/takeaway2.png";
+import takeaway3 from "../../images/modeloGrowth/takeaway3.png";
 
 const ModeloGrowthHacking = () => {
   return (

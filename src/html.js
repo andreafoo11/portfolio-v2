@@ -14,6 +14,22 @@ export default function HTML(props) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+(function(){
+  try {
+    var k = 'portfolio-theme';
+    var v = localStorage.getItem(k);
+    var root = document.documentElement;
+    if (v === 'light') root.classList.remove('dark');
+    else if (v === 'dark') root.classList.add('dark');
+    else if (window.matchMedia('(prefers-color-scheme: light)').matches) root.classList.remove('dark');
+    else root.classList.add('dark');
+  } catch (e) {}
+})();`,
+          }}
+        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

@@ -37,10 +37,7 @@ const AboutPage = () => {
   };
 
   return (
-    <div
-      className="min-h-screen text-white flex flex-col"
-      style={{ backgroundColor: "#151515" }}
-    >
+    <div className="flex min-h-screen flex-col bg-page text-ink">
       <title>About</title>
       <NavBar pageTitle="About Page" />
 
@@ -49,10 +46,10 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-24">
           {/* Text Content */}
           <div className="flex-1 space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold pt-8 md:pt-0">
+            <h1 className="pt-8 text-4xl font-bold text-ink md:pt-0 md:text-5xl lg:text-6xl">
               Hi, I'm Andrea
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed">
+            <p className="text-base leading-relaxed text-ink-muted sm:text-lg md:text-xl">
               With a background in Computer Science and Education, I bring a
               unique perspective to product development that combines technical
               knowledge with user-centered design. My mission is to create
@@ -60,7 +57,7 @@ const AboutPage = () => {
               accessible and meaningful for everyone.
             </p>
             <br />
-            <p className="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed">
+            <p className="text-base leading-relaxed text-ink-muted sm:text-lg md:text-xl">
               CURRENTLY
               <br />
               located in{" "}
@@ -98,7 +95,7 @@ const AboutPage = () => {
             {showMap && (
               <div className="container mx-auto px-4">
                 <div className="relative">
-                  <div className="w-full aspect-[2/1] bg-white/10 rounded-lg overflow-hidden p-4">
+                  <div className="aspect-[2/1] w-full overflow-hidden rounded-lg border border-ink/10 bg-surface-muted p-4 dark:bg-white/10">
                     <WorldMap
                       onCityClick={setSelectedCity}
                       selectedCity={selectedCity}
@@ -108,14 +105,13 @@ const AboutPage = () => {
                   {/* City Information Overlay */}
                   {selectedCity && (
                     <div
-                      className="fixed bottom-8 left-8 w-90 bg-white/10 backdrop-blur-md rounded-lg p-6 
-                          transition-all duration-300 ease-in-out"
+                      className="fixed bottom-8 left-8 w-90 max-w-md rounded-lg border border-ink/10 bg-page/95 p-6 shadow-lg backdrop-blur-md transition-all duration-300 ease-in-out dark:border-white/10 dark:bg-surface/95"
                     >
                       {/* Close button */}
 
                       <button
                         onClick={() => setSelectedCity(null)}
-                        className="absolute top-4 right-4 text-white/50 hover:text-white transition-colors duration-300"
+                        className="absolute right-4 top-4 text-ink-muted transition-colors hover:text-ink dark:hover:text-white"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -133,17 +129,17 @@ const AboutPage = () => {
                         </svg>
                       </button>
 
-                      <h3 className="text-2xl font-bold mb-4">
+                      <h3 className="mb-4 text-2xl font-bold text-ink">
                         {selectedCity.name}
                       </h3>
-                      <p className="text-white/80 mb-4">
+                      <p className="mb-4 text-ink-muted">
                         {cityData[selectedCity.id].description}
                       </p>
                       <ul className="space-y-2">
                         {cityData[selectedCity.id].experiences.map(
                           (exp, index) => (
                             <li key={index} className="flex items-center">
-                              <span className="w-2 h-2 bg-white/50 rounded-full mr-3" />
+                              <span className="mr-3 h-2 w-2 rounded-full bg-ink/30 dark:bg-white/50" />
                               {exp}
                             </li>
                           )

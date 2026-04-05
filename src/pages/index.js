@@ -137,24 +137,21 @@ function IndexPage({ data }) {
   }, []);
 
   return (
-    <div
-      className="flex min-h-screen flex-col text-white"
-      style={{ backgroundColor: "#151515" }}
-    >
+    <div className="flex min-h-screen flex-col bg-page text-ink">
       <Layout>
         <SideMenu />
 
         <section
           id="intro"
-          className="relative min-h-screen w-full overflow-hidden bg-[#151515]"
+          className="relative min-h-screen w-full overflow-hidden bg-page"
         >
           <HeroMesh />
           <div className="relative z-10 mx-auto flex min-h-screen max-w-3xl flex-col px-6 pt-24 text-center md:px-10 md:pt-28">
             <div className="flex flex-1 flex-col justify-center gap-10 py-8 md:gap-12 md:py-12">
-              <h1 className="text-3xl font-extralight tracking-tight text-white md:text-4xl md:tracking-tighter lg:text-5xl">
+              <h1 className="text-3xl font-extralight tracking-tight text-ink md:text-4xl md:tracking-tighter lg:text-5xl">
                 Andrea Foo
               </h1>
-              <p className="mx-auto max-w-2xl text-base font-light leading-relaxed text-white/65 md:text-lg md:leading-relaxed">
+              <p className="mx-auto max-w-2xl text-base font-light leading-relaxed text-ink-muted md:text-lg md:leading-relaxed">
                 Product manager with roots in Computer Science and Education. I
                 turn messy problems into clear products—balancing what users
                 need, what design promises, and what engineering can ship.
@@ -170,7 +167,7 @@ function IndexPage({ data }) {
                 ease: "easeInOut",
               }}
             >
-              <p className="mb-2 text-sm text-white/50">Scroll for more</p>
+              <p className="mb-2 text-sm text-ink-muted">Scroll for more</p>
               <svg
                 width="24"
                 height="24"
@@ -178,7 +175,7 @@ function IndexPage({ data }) {
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
-                className="text-white/50"
+                className="text-ink-muted"
               >
                 <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
               </svg>
@@ -188,7 +185,7 @@ function IndexPage({ data }) {
 
         <div className="container mx-auto px-4 py-10">
         <div id="projects" className="scroll-mt-24">
-        <h2 className="text-center text-3xl uppercase leading-relaxed text-gray-300">
+        <h2 className="text-center text-3xl uppercase leading-relaxed text-ink-muted">
           all projects
         </h2>
 
@@ -199,7 +196,7 @@ function IndexPage({ data }) {
               <Link
                 key={index}
                 to={`/project${project.node.frontmatter.slug}`}
-                className="px-4 py-2 rounded-lg text-sm transition-all duration-300 bg-gray-800/50 text-gray-300 hover:bg-gray-700/50 hover:text-white"
+                className="rounded-lg border border-ink/10 bg-accent-lavender/25 px-4 py-2 text-sm text-ink-muted transition-all duration-300 hover:bg-accent-peach/50 hover:text-ink dark:border-transparent dark:bg-gray-800/50 dark:text-gray-300 dark:hover:bg-gray-700/50 dark:hover:text-white"
               >
                 {project.node.frontmatter.title}
               </Link>
@@ -312,7 +309,7 @@ function IndexPage({ data }) {
           </div>
           <Link
             to="/about"
-            className="text-2xl text-center py-16 block mx-auto w-full parallax"
+            className="mx-auto block w-full py-16 text-center text-2xl text-ink transition-colors hover:text-accent-lavender dark:hover:text-gray-200 parallax"
           >
             Learn more about my experiences →
           </Link>

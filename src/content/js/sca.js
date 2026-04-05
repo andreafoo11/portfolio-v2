@@ -1,6 +1,6 @@
 import React from "react";
-import NumberComponent from "/src/components/NumberComponent";
-import ScaResourceAllocation from "/src/images/supplyCrunchAllocation/sca2.png";
+import NumberComponent from "../../components/NumberComponent";
+import ScaResourceAllocation from "../../images/supplyCrunchAllocation/sca2.png";
 
 const ScaMicroservice = () => {
   return (

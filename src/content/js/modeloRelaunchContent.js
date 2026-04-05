@@ -1,18 +1,13 @@
 import React from "react";
-import CenteredIconHeaderDescription from "/src/components/CenteredIconHeaderDescription";
-import ProcessCard from "/src/components/ProcessCard";
-import ModeloRelaunchMetrics1 from "/src/images/modeloRelaunch/metrics1.png";
-import ModeloRelaunchMetrics2 from "/src/images/modeloRelaunch/metrics2.png";
-import ModeloRelaunchMetrics4 from "/src/images/modeloRelaunch/metrics4.png";
-import ModeloRelaunchMetrics5 from "/src/images/modeloRelaunch/metrics5.png";
-import ModeloRelaunchMetrics6 from "/src/images/modeloRelaunch/metrics6.png";
-import ModeloRelaunch1 from "/src/images/modeloRelaunch/objective.png";
-import ModeloRelaunch2 from "/src/images/modeloRelaunch/objective2.png";
-import ModeloRelaunch3 from "/src/images/modeloRelaunch/objective3.png";
-import ModeloRelaunchResults1 from "/src/images/modeloRelaunch/results1.png";
-import ModeloRelaunchResults2 from "/src/images/modeloRelaunch/results2.png";
-import ModeloRelaunchResults3 from "/src/images/modeloRelaunch/results3.png";
-import ModeloRelaunchMetrics3 from "/src/images/modeloRelaunch/test.png";
+import CenteredIconHeaderDescription from "../../components/CenteredIconHeaderDescription";
+import ProcessCard from "../../components/ProcessCard";
+import ModeloRelaunchMetricsGrid from "../../components/ModeloRelaunchMetricsGrid";
+import ModeloRelaunch1 from "../../images/modeloRelaunch/objective.png";
+import ModeloRelaunch2 from "../../images/modeloRelaunch/objective2.png";
+import ModeloRelaunch3 from "../../images/modeloRelaunch/objective3.png";
+import ModeloRelaunchResults1 from "../../images/modeloRelaunch/results1.png";
+import ModeloRelaunchResults2 from "../../images/modeloRelaunch/results2.png";
+import ModeloRelaunchResults3 from "../../images/modeloRelaunch/results3.png";
 
 const ModeloRelaunch = () => {
   return (
@@ -149,7 +144,7 @@ const ModeloRelaunch = () => {
         <br />
         <br />
         <p>We launched with three main value propositions: </p>
-        <div className="flex flex-col gap-4 justify-center items-center mt-8">
+        <div className="mt-8 flex flex-col items-center justify-center gap-4">
           <img
             src={ModeloRelaunchResults1}
             alt="Modelo Results 1"
@@ -168,45 +163,16 @@ const ModeloRelaunch = () => {
         </div>
       </div>
 
-      {/* Metrics Section */}
+      {/* Metrics — single soft lavender panel (no dark fill) */}
       <div
         className="max-w-5xl mx-auto"
         style={{ marginTop: "120px", marginBottom: "120px" }}
       >
-        <h2 className="text-3xl font-bold mb-8">Metrics</h2>
-        <div className="flex flex-row justify-center items-center">
-          <img
-            src={ModeloRelaunchMetrics1}
-            alt="Modelo Relaunch Metrics"
-            style={{ width: "20%", margin: "0 50px" }}
-          />
-          <img
-            src={ModeloRelaunchMetrics2}
-            alt="Modelo Relaunch Metrics"
-            style={{ width: "20%", margin: "0 50px" }}
-          />
-          <img
-            src={ModeloRelaunchMetrics3}
-            alt="Modelo Relaunch Metrics"
-            style={{ width: "20%", margin: "0 50px" }}
-          />
-        </div>
-        <div className="flex flex-row justify-center items-center">
-          <img
-            src={ModeloRelaunchMetrics4}
-            alt="Modelo Relaunch Metrics"
-            style={{ width: "20%", margin: "0 50px" }}
-          />
-          <img
-            src={ModeloRelaunchMetrics5}
-            alt="Modelo Relaunch Metrics"
-            style={{ width: "20%", margin: "0 50px" }}
-          />
-          <img
-            src={ModeloRelaunchMetrics6}
-            alt="Modelo Relaunch Metrics"
-            style={{ width: "20%", margin: "0 50px" }}
-          />
+        <h2 className="mb-8 text-3xl font-bold text-black dark:text-neutral-100">
+          Metrics
+        </h2>
+        <div className="rounded-2xl border border-[rgba(167,139,250,0.28)] bg-[rgba(237,233,255,0.82)] px-4 py-8 md:px-8 md:py-10 dark:border-[rgba(196,181,253,0.28)] dark:bg-[rgba(167,139,250,0.12)]">
+          <ModeloRelaunchMetricsGrid />
         </div>
       </div>
 

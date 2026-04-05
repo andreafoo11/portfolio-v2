@@ -68,7 +68,7 @@ const WorldMap = ({ onCityClick, selectedCity }) => {
             />
 
             {/* City Name - now on the right */}
-            <span className="text-white text-sm whitespace-nowrap">
+            <span className="whitespace-nowrap text-sm text-ink dark:text-white">
               {city.name}
             </span>
 

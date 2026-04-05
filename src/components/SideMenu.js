@@ -49,17 +49,19 @@ const SideMenu = () => {
             className="group flex items-center gap-3"
           >
             <div
-              className={`w-2 h-2 rounded-full transition-all duration-300 
+              className={`h-2 w-2 rounded-full transition-all duration-300
                 ${
                   activeSection === section.id
-                    ? "bg-white w-3 h-3"
-                    : "bg-white/30 group-hover:bg-white/50"
+                    ? "h-3 w-3 bg-ink dark:bg-white"
+                    : "bg-ink/25 group-hover:bg-ink/45 dark:bg-white/30 dark:group-hover:bg-white/50"
                 }`}
             />
             <span
-              className={`text-sm transition-all duration-300 opacity-0 group-hover:opacity-100 
+              className={`text-sm transition-all duration-300 opacity-0 group-hover:opacity-100
                 ${
-                  activeSection === section.id ? "text-white" : "text-white/30"
+                  activeSection === section.id
+                    ? "text-ink dark:text-white"
+                    : "text-ink/35 dark:text-white/30"
                 }`}
             >
               {section.label}

@@ -19,9 +19,9 @@ const ProcessCard = ({ number, title, description, inverted }) => {
           <h3>{number}</h3>
         </div>
 
-        <div className="flex flex-col" style={{ color: "white", width: "80%" }}>
+        <div className="flex w-[80%] flex-col text-black dark:text-neutral-100">
           <h3 className="text-lg font-bold">{title}</h3>
-          <p className="text-gray-600">{description}</p>
+          <p className="text-black/75 dark:text-neutral-300">{description}</p>
         </div>
       </div>
     );
@@ -43,9 +43,9 @@ const ProcessCard = ({ number, title, description, inverted }) => {
           <h3>{number}</h3>
         </div>
 
-        <div className="flex flex-col" style={{ color: "white", width: "80%" }}>
+        <div className="flex w-[80%] flex-col text-black dark:text-neutral-100">
           <h3 className="text-lg font-bold">{title}</h3>
-          <p className="text-gray-600">{description}</p>
+          <p className="text-black/75 dark:text-neutral-300">{description}</p>
         </div>
       </div>
     );

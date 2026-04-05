@@ -1,10 +1,10 @@
 import React from "react";
-import NumberComponent from "/src/components/NumberComponent";
-import BasilSolutionIcon1 from "/src/images/basil/basil_solution_1_icon.png";
-import BasilSolutionIcon2 from "/src/images/basil/basil_solution_2_icon.png";
-import BasilSolutionIcon3 from "/src/images/basil/basil_solution_3_icon.png";
-import LisaIcon from "/src/images/basil/lisa_icon.svg";
-import BasilUserResearch from "/src/images/basil/user_research_image.png";
+import NumberComponent from "../../components/NumberComponent";
+import BasilSolutionIcon1 from "../../images/basil/basil_solution_1_icon.png";
+import BasilSolutionIcon2 from "../../images/basil/basil_solution_2_icon.png";
+import BasilSolutionIcon3 from "../../images/basil/basil_solution_3_icon.png";
+import LisaIcon from "../../images/basil/lisa_icon.svg";
+import BasilUserResearch from "../../images/basil/user_research_image.png";
 
 const VideoEmbed = ({ src, title }) => (
   <div className="flex justify-center my-12">

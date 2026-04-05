@@ -1,8 +1,7 @@
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import React, { useEffect, useMemo, useRef, useState } from "react";
-
-const BG = "#151515";
+import { useTheme } from "../context/ThemeContext";
 
 const vertexShader = /* glsl */ `
 uniform float uTime;
@@ -37,9 +36,10 @@ void main() {
 
 const fragmentShader = /* glsl */ `
 uniform vec3 uColor;
+uniform float uAlpha;
 
 void main() {
-  gl_FragColor = vec4(uColor, 0.14);
+  gl_FragColor = vec4(uColor, uAlpha);
 }
 `;
 
@@ -73,7 +73,7 @@ function buildAxisAlignedGrid(nx, ny, gw, gh) {
   return new Float32Array(positions);
 }
 
-function WireMesh() {
+function WireMesh({ isDark }) {
   const { viewport, gl, camera } = useThree();
   const targetPointer = useRef(new THREE.Vector2(0, 0));
   const smoothPointer = useRef(new THREE.Vector2(0, 0));
@@ -83,9 +83,20 @@ function WireMesh() {
       uTime: { value: 0 },
       uPointer: { value: new THREE.Vector2(0, 0) },
       uColor: { value: new THREE.Vector3(0.55, 0.58, 0.65) },
+      uAlpha: { value: 0.14 },
     }),
     []
   );
+
+  useEffect(() => {
+    if (isDark) {
+      uniforms.uColor.value.set(0.55, 0.58, 0.65);
+      uniforms.uAlpha.value = 0.14;
+    } else {
+      uniforms.uColor.value.set(0.42, 0.45, 0.52);
+      uniforms.uAlpha.value = 0.2;
+    }
+  }, [isDark, uniforms]);
 
   const { width, height } = viewport;
   const gw = Math.max(width, 0.01) * 2.35;
@@ -143,29 +154,27 @@ function WireMesh() {
   );
 }
 
-function Scene() {
+function Scene({ isDark }) {
+  const bg = isDark ? "#151515" : "#ffffff";
   return (
     <>
-      <color attach="background" args={[BG]} />
-      <WireMesh />
+      <color attach="background" args={[bg]} key={bg} />
+      <WireMesh isDark={isDark} />
     </>
   );
 }
 
 export default function HeroMesh() {
+  const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const isDark = theme === "dark";
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   if (!mounted) {
-    return (
-      <div
-        className="absolute inset-0 bg-[#151515]"
-        aria-hidden
-      />
-    );
+    return <div className="absolute inset-0 bg-page" aria-hidden />;
   }
 
   return (
@@ -180,7 +189,7 @@ export default function HeroMesh() {
         style={{ width: "100%", height: "100%", pointerEvents: "none" }}
         dpr={[1, 2]}
       >
-        <Scene />
+        <Scene isDark={isDark} />
       </Canvas>
     </div>
   );

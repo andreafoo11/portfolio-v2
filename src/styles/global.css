@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --tw-page: 255 255 255;
+    --tw-ink: 35 32 42;
+    --tw-ink-muted: 95 90 102;
+    --tw-ink-subtle: 140 135 148;
+    --tw-surface: 255 255 255;
+    --tw-surface-muted: 252 250 255;
+  }
+
+  html.dark {
+    --tw-page: 21 21 21;
+    --tw-ink: 245 245 245;
+    --tw-ink-muted: 163 163 163;
+    --tw-ink-subtle: 115 115 115;
+    --tw-surface: 28 28 28;
+    --tw-surface-muted: 24 24 24;
+  }
+
+  html {
+    @apply bg-page text-ink antialiased;
+  }
+}

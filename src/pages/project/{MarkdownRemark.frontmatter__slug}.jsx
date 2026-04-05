@@ -49,7 +49,7 @@ export default function ProjectTemplate({ data }) {
     : allProjects[0].node.frontmatter;  // Loop to first project
 
   return (
-    <div className="min-h-screen text-white" style={{ backgroundColor: '#151515' }}>
+    <div className="min-h-screen bg-page text-ink">
       <Layout>
       <div className="container mx-auto px-4 py-8">
         {/* Featured Image */}
@@ -82,7 +82,7 @@ export default function ProjectTemplate({ data }) {
             {frontmatter.technicalskills?.map((skill, index) => (
               <span 
                 key={`tech-${index}`}
-                className="px-3 py-1 bg-gray-700 rounded-full text-sm"
+                className="rounded-full bg-accent-lavender/35 px-3 py-1 text-sm text-ink dark:bg-gray-700 dark:text-white"
               >
                 {skill}
               </span>
@@ -90,7 +90,7 @@ export default function ProjectTemplate({ data }) {
             {frontmatter.softSkills?.map((skill, index) => (
               <span 
                 key={`soft-${index}`}
-                className="px-3 py-1 bg-gray-700 rounded-full text-sm"
+                className="rounded-full bg-accent-lavender/35 px-3 py-1 text-sm text-ink dark:bg-gray-700 dark:text-white"
               >
                 {skill}
               </span>
@@ -106,21 +106,21 @@ export default function ProjectTemplate({ data }) {
           {previousProject ? (
             <Link 
               to={`/project${previousProject.slug}`} 
-              className={`w-full md:flex-1 md:max-w-[350px] flex items-center gap-3 md:gap-4 px-4 md:px-6 py-4 md:py-5 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 transition-all duration-300 group border border-gray-700/30 hover:border-gray-600/30`}
+              className={`group flex w-full items-center gap-3 rounded-lg border border-ink/10 bg-accent-peach/25 px-4 py-4 transition-all duration-300 hover:bg-accent-mint/35 dark:border-gray-700/30 dark:bg-gray-800/50 dark:hover:bg-gray-700/50 md:max-w-[350px] md:flex-1 md:gap-4 md:px-6 md:py-5`}
             >
               <svg 
                 width="20" 
                 height="20" 
                 viewBox="0 0 24 24" 
                 fill="none" 
-                className="group-hover:-translate-x-1 transition-transform duration-300 text-gray-400 group-hover:text-white min-w-[20px] md:min-w-[24px] md:w-6 md:h-6"
+                className="min-w-[20px] text-ink-muted transition-transform duration-300 group-hover:-translate-x-1 group-hover:text-ink dark:text-gray-400 dark:group-hover:text-white md:h-6 md:min-w-[24px] md:w-6"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <div className="flex flex-col gap-0.5 min-w-0 max-w-full">
-                <span className="text-xs uppercase tracking-wider text-gray-400 font-medium whitespace-nowrap">Previous Project</span>
-                <span className="text-sm md:text-base text-white font-semibold truncate max-w-[180px] md:max-w-[220px]">{previousProject.title}</span>
+                <span className="whitespace-nowrap text-xs font-medium uppercase tracking-wider text-ink-muted dark:text-gray-400">Previous Project</span>
+                <span className="max-w-[180px] truncate text-sm font-semibold text-ink dark:text-white md:max-w-[220px] md:text-base">{previousProject.title}</span>
               </div>
             </Link>
           ) : (
@@ -130,18 +130,18 @@ export default function ProjectTemplate({ data }) {
           {nextProject ? (
             <Link 
               to={`/project${nextProject.slug}`} 
-              className={`w-full md:flex-1 md:max-w-[350px] flex items-center justify-end gap-3 md:gap-4 px-4 md:px-6 py-4 md:py-5 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 transition-all duration-300 group border border-gray-700/30 hover:border-gray-600/30`}
+              className={`group flex w-full items-center justify-end gap-3 rounded-lg border border-ink/10 bg-accent-peach/25 px-4 py-4 transition-all duration-300 hover:bg-accent-mint/35 dark:border-gray-700/30 dark:bg-gray-800/50 dark:hover:bg-gray-700/50 md:max-w-[350px] md:flex-1 md:gap-4 md:px-6 md:py-5`}
             >
               <div className="flex flex-col items-end gap-0.5 min-w-0 max-w-full">
-                <span className="text-xs uppercase tracking-wider text-gray-400 font-medium whitespace-nowrap">Next Project</span>
-                <span className="text-sm md:text-base text-white font-semibold truncate max-w-[180px] md:max-w-[220px]">{nextProject.title}</span>
+                <span className="whitespace-nowrap text-xs font-medium uppercase tracking-wider text-ink-muted dark:text-gray-400">Next Project</span>
+                <span className="max-w-[180px] truncate text-sm font-semibold text-ink dark:text-white md:max-w-[220px] md:text-base">{nextProject.title}</span>
               </div>
               <svg 
                 width="20" 
                 height="20" 
                 viewBox="0 0 24 24" 
                 fill="none" 
-                className="group-hover:translate-x-1 transition-transform duration-300 text-gray-400 group-hover:text-white min-w-[20px] md:min-w-[24px] md:w-6 md:h-6"
+                className="min-w-[20px] text-ink-muted transition-transform duration-300 group-hover:translate-x-1 group-hover:text-ink dark:text-gray-400 dark:group-hover:text-white md:h-6 md:min-w-[24px] md:w-6"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M9 6L15 12L9 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

@@ -1,20 +1,19 @@
 import React from "react";
-import IconHeaderDescription from "/src/components/icon-header-description";
-import IconHeader from "/src/components/IconHeader";
-import NumberComponent from "/src/components/NumberComponent";
-import objective1 from "/src/images/modelob2c/objective1.png";
-import objective2 from "/src/images/modelob2c/objective2.png";
-import objective3 from "/src/images/modelob2c/objective3.png";
-import onboarding1 from "/src/images/modelob2c/onboarding.png";
-import onboarding2 from "/src/images/modelob2c/onboarding2.png";
-import process1 from "/src/images/modelob2c/process1.1.png";
-import process2 from "/src/images/modelob2c/process1.2.png";
-import results1 from "/src/images/modelob2c/results2.1.png";
-import results3_1 from "/src/images/modelob2c/results3.1.png";
-import results3_2 from "/src/images/modelob2c/results3.2.png";
-import takeaway1 from "/src/images/modelob2c/takeaway1.png";
-import takeaway2 from "/src/images/modelob2c/takeaways2.png";
-import takeaway3 from "/src/images/modelob2c/takeaways3.png";
+import IconHeaderDescription from "../../components/icon-header-description";
+import IconHeader from "../../components/IconHeader";
+import NumberComponent from "../../components/NumberComponent";
+import objective1 from "../../images/modelob2c/objective1.png";
+import objective2 from "../../images/modelob2c/objective2.png";
+import objective3 from "../../images/modelob2c/objective3.png";
+import onboarding1 from "../../images/modelob2c/onboarding.png";
+import onboarding2 from "../../images/modelob2c/onboarding2.png";
+import process1 from "../../images/modelob2c/process1.1.png";
+import process2 from "../../images/modelob2c/process1.2.png";
+import results3_1 from "../../images/modelob2c/results3.1.png";
+import results3_2 from "../../images/modelob2c/results3.2.png";
+import takeaway1 from "../../images/modelob2c/takeaway1.png";
+import takeaway2 from "../../images/modelob2c/takeaways2.png";
+import takeaway3 from "../../images/modelob2c/takeaways3.png";
 
 const ModeloB2C = () => {
   return (
@@ -145,39 +144,41 @@ const ModeloB2C = () => {
           process to ensure that the new interface was intuitive and efficient.
         </p>
 
-        <h2 className="text-2xl font-bold mb-8 mt-8">Results</h2>
-        <p>
-          Results of all the action items taken above was optimal. Metrics on{" "}
-          <span style={{ color: "#F75223" }}>
-            usage of the product and conversion rates improved greatly
-          </span>
-          : 
-        </p>
-        <div className="flex flex-col md:flex-row gap-16 justify-center items-center mt-8">
-          <div className="flex flex-col items-center">
-            <h2 className="text-5xl font-bold">17%</h2>
-            <p className="text-center">
-              highest{" "}
-              <span style={{ color: "#F75223" }}>
-                {" "}
-                week-over-week user retention
-              </span>{" "}
-              after revamping the entire workspace
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <h2 className="text-5xl font-bold">25%→93%</h2>
-            <p className="text-center">
-              <span style={{ color: "#F75223" }}>conversion</span> rate increase
-              of workspace to model viewing
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <h2 className="text-5xl font-bold">57.1%</h2>
-            <p className="text-center">
-              new user onboarding{" "}
-              <span style={{ color: "#F75223" }}>completion rate</span>
-            </p>
+        <div className="mt-8 rounded-2xl border border-ink/15 bg-surface-muted px-6 py-8 md:px-10 md:py-10 dark:border-white/10 dark:bg-white/[0.04]">
+          <h2 className="text-2xl font-bold mb-8 text-ink">Results</h2>
+          <p className="text-ink">
+            Results of all the action items taken above was optimal. Metrics on{" "}
+            <span style={{ color: "#F75223" }}>
+              usage of the product and conversion rates improved greatly
+            </span>
+            : 
+          </p>
+          <div className="flex flex-col md:flex-row gap-16 justify-center items-center mt-8">
+            <div className="flex flex-col items-center">
+              <h2 className="text-5xl font-bold text-ink">17%</h2>
+              <p className="text-center text-ink">
+                highest{" "}
+                <span style={{ color: "#F75223" }}>
+                  {" "}
+                  week-over-week user retention
+                </span>{" "}
+                after revamping the entire workspace
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <h2 className="text-5xl font-bold text-ink">25%→93%</h2>
+              <p className="text-center text-ink">
+                <span style={{ color: "#F75223" }}>conversion</span> rate increase
+                of workspace to model viewing
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <h2 className="text-5xl font-bold text-ink">57.1%</h2>
+              <p className="text-center text-ink">
+                new user onboarding{" "}
+                <span style={{ color: "#F75223" }}>completion rate</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -250,7 +251,103 @@ const ModeloB2C = () => {
             As a result of the new user onboarding, we gained a better
             understanding of our users through the onboarding questionnaire.
           </p>
-          <img src={results1} alt="Results 3" className="mt-8" />
+          <div className="mt-12 rounded-2xl border border-ink/10 bg-surface-muted/90 p-6 dark:border-white/10 dark:bg-white/[0.04] md:p-8">
+            <p className="mb-6 text-center text-sm font-medium uppercase tracking-wider text-ink-muted dark:text-neutral-400 md:text-left">
+              Questionnaire insights
+            </p>
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-5">
+              {/* Industry */}
+              <div className="flex flex-col rounded-xl border border-ink/10 bg-page/90 p-5 shadow-sm dark:border-white/10 dark:bg-page/60">
+                <h3 className="mb-5 border-b border-ink/10 pb-3 text-xs font-semibold uppercase tracking-wider text-ink-muted dark:border-white/10 dark:text-neutral-400">
+                  Industry
+                </h3>
+                <div className="flex flex-1 flex-col justify-between gap-8">
+                  <div className="flex flex-col items-center text-center">
+                    <p className="text-5xl font-bold text-ink dark:text-neutral-100">
+                      32%
+                    </p>
+                    <p className="mt-3 max-w-[14rem] text-sm leading-snug text-ink dark:text-neutral-200">
+                      of new users were from the{" "}
+                      <span style={{ color: "#F75223" }}>
+                        Architecture, Engineering, and Construction
+                      </span>{" "}
+                      industry
+                    </p>
+                  </div>
+                  <div className="h-px w-full bg-ink/10 dark:bg-white/10" />
+                  <div className="flex flex-col items-center text-center">
+                    <p className="text-5xl font-bold text-ink dark:text-neutral-100">
+                      21%
+                    </p>
+                    <p className="mt-3 max-w-[14rem] text-sm leading-snug text-ink dark:text-neutral-200">
+                      of new users were from the{" "}
+                      <span style={{ color: "#F75223" }}>interior design</span>{" "}
+                      industry
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* Role */}
+              <div className="flex flex-col rounded-xl border border-ink/10 bg-page/90 p-5 shadow-sm dark:border-white/10 dark:bg-page/60">
+                <h3 className="mb-5 border-b border-ink/10 pb-3 text-xs font-semibold uppercase tracking-wider text-ink-muted dark:border-white/10 dark:text-neutral-400">
+                  Professional role
+                </h3>
+                <div className="flex flex-1 flex-col justify-between gap-8">
+                  <div className="flex flex-col items-center text-center">
+                    <p className="text-5xl font-bold text-ink dark:text-neutral-100">
+                      52%
+                    </p>
+                    <p className="mt-3 max-w-[14rem] text-sm leading-snug text-ink dark:text-neutral-200">
+                      of users were{" "}
+                      <span style={{ color: "#F75223" }}>
+                        architects/designers
+                      </span>
+                    </p>
+                  </div>
+                  <div className="h-px w-full bg-ink/10 dark:bg-white/10" />
+                  <div className="flex flex-col items-center text-center">
+                    <p className="text-5xl font-bold text-ink dark:text-neutral-100">
+                      24%
+                    </p>
+                    <p className="mt-3 max-w-[14rem] text-sm leading-snug text-ink dark:text-neutral-200">
+                      of users were{" "}
+                      <span style={{ color: "#F75223" }}>students</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* Sign-up intent */}
+              <div className="flex flex-col rounded-xl border border-ink/10 bg-page/90 p-5 shadow-sm dark:border-white/10 dark:bg-page/60">
+                <h3 className="mb-5 border-b border-ink/10 pb-3 text-xs font-semibold uppercase tracking-wider text-ink-muted dark:border-white/10 dark:text-neutral-400">
+                  Sign-up intent
+                </h3>
+                <div className="flex flex-1 flex-col justify-between gap-8">
+                  <div className="flex flex-col items-center text-center">
+                    <p className="text-5xl font-bold text-ink dark:text-neutral-100">
+                      68%
+                    </p>
+                    <p className="mt-3 max-w-[14rem] text-sm leading-snug text-ink dark:text-neutral-200">
+                      of new users created a Modelo account to be able to{" "}
+                      <span style={{ color: "#F75223" }}>share their model</span>{" "}
+                      with other people
+                    </p>
+                  </div>
+                  <div className="h-px w-full bg-ink/10 dark:bg-white/10" />
+                  <div className="flex flex-col items-center text-center">
+                    <p className="text-5xl font-bold text-ink dark:text-neutral-100">
+                      33%
+                    </p>
+                    <p className="mt-3 max-w-[14rem] text-sm leading-snug text-ink dark:text-neutral-200">
+                      of new users created a Modelo account to{" "}
+                      <span style={{ color: "#F75223" }}>
+                        collaborate with team members
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

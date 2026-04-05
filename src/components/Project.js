@@ -23,8 +23,8 @@ export default function Project({
               inverted ? "md:flex-row" : "md:flex-row-reverse"
             } gap-2 md:gap-0 md:px-0 max-w-[1400px]`}
           >
-            {/* Mobile layout (horizontal) */}
-            <div className="flex md:hidden flex-row items-center justify-start w-[calc(100%-2rem)]">
+            {/* Mobile only: index + rule (hidden on md+ where the vertical rail is used) */}
+            <div className="flex w-full max-w-full flex-row items-center justify-start text-ink md:hidden">
               <div className="text-xl font-bold tracking-wider">{number}</div>
               <svg
                 width="100%"
@@ -33,18 +33,18 @@ export default function Project({
                 preserveAspectRatio="none"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="flex-grow"
+                className="flex-grow text-ink"
               >
                 <line
                   x1="0"
                   y1="12"
                   x2="96%"
                   y2="12"
-                  stroke="white"
+                  stroke="currentColor"
                   strokeWidth="2"
                   strokeDasharray="4 4"
                 />
-                <path d="M1000 12L980 4V20L1000 12Z" fill="white" />
+                <path d="M1000 12L980 4V20L1000 12Z" fill="currentColor" />
               </svg>
             </div>
             {/* Main content wrapper */}
@@ -74,7 +74,7 @@ export default function Project({
                 <div
                   className={`hidden lg:block absolute ${
                     inverted ? "left-0" : "right-0"
-                  } top-[45%] h-[43%] w-[630px] bg-white/15 backdrop-blur-md ${
+                  } top-[45%] h-[43%] w-[630px] bg-ink/10 backdrop-blur-md dark:bg-white/15 ${
                     inverted ? "-translate-x-2/3" : "translate-x-2/3"
                   }`}
                 >
@@ -87,7 +87,7 @@ export default function Project({
                         : "items-end text-right"
                     }`}
                   >
-                    <p className="text-white/90 text-lg font-light leading-relaxed max-w-[80%]">
+                    <p className="max-w-[80%] text-lg font-light leading-relaxed text-ink dark:text-white/90">
                       {description}
                     </p>
                     <div
@@ -98,7 +98,7 @@ export default function Project({
                       {tags.map((tag, index) => (
                         <span
                           key={index}
-                          className="px-3 py-1 bg-white/10 rounded-full text-sm font-medium"
+                          className="rounded-full bg-accent-lavender/35 px-3 py-1 text-sm font-medium text-ink dark:bg-white/10 dark:text-white"
                         >
                           {tag}
                         </span>
@@ -110,18 +110,18 @@ export default function Project({
 
               {/* Mobile content - moved outside image container */}
               <div className="block lg:hidden w-full mt-8">
-                <div className="text-4xl sm:text-5xl font-bold mb-4 text-white">
+                <div className="mb-4 text-4xl font-bold text-ink sm:text-5xl dark:text-white">
                   {title}
                 </div>
                 <div className="space-y-6">
-                  <p className="text-white/90 text-base sm:text-lg font-light leading-relaxed">
+                  <p className="text-base font-light leading-relaxed text-ink-muted sm:text-lg dark:text-white/90">
                     {description}
                   </p>
                   <div className="flex flex-wrap gap-3">
                     {tags.map((tag, index) => (
                       <span
                         key={index}
-                        className="px-3 py-1 bg-white/10 rounded-full text-sm font-medium text-white"
+                        className="rounded-full bg-accent-mint/40 px-3 py-1 text-sm font-medium text-ink dark:bg-white/10 dark:text-white"
                       >
                         {tag}
                       </span>
@@ -132,7 +132,7 @@ export default function Project({
 
               {/* Project name - desktop only */}
               <div
-                className={`hidden lg:block text-5xl md:text-6xl lg:text-6xl font-bold whitespace-nowrap relative z-20 -mt-4 md:mt-0 md:-translate-y-24 ${
+                className={`relative z-20 -mt-4 hidden whitespace-nowrap text-5xl font-bold text-ink md:mt-0 md:-translate-y-24 md:text-6xl lg:block lg:text-6xl dark:text-white ${
                   inverted ? "text-left" : "text-right"
                 }`}
               >
@@ -140,8 +140,8 @@ export default function Project({
               </div>
             </div>
             {/* Desktop layout (vertical) */}
-            <div className="hidden md:flex flex-col items-center justify-center md:pr-8 h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px]">
-              <div className="-rotate-90 mb-4 text-xl md:text-2xl font-bold tracking-wider">
+            <div className="hidden h-[200px] flex-col items-center justify-center text-ink sm:h-[250px] md:flex md:h-[300px] md:pr-8 lg:h-[350px] xl:h-[400px]">
+              <div className="mb-4 -rotate-90 text-xl font-bold tracking-wider md:text-2xl">
                 {number}
               </div>
               <svg
@@ -151,17 +151,18 @@ export default function Project({
                 preserveAspectRatio="none"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="text-ink"
               >
                 <line
                   x1="12"
                   y1="0"
                   x2="12"
                   y2="95%"
-                  stroke="white"
+                  stroke="currentColor"
                   strokeWidth="2"
                   strokeDasharray="4 4"
                 />
-                <path d="M12 500L4 480H20L12 500Z" fill="white" />
+                <path d="M12 500L4 480H20L12 500Z" fill="currentColor" />
               </svg>
             </div>
           </div>

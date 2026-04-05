@@ -1,14 +1,14 @@
 import React from "react";
-import NumberComponent from "/src/components/NumberComponent";
-import WebelongDesignProcess1 from "/src/images/WeBelong/designProcessImg1.png";
-import WebelongDesignProcess2 from "/src/images/WeBelong/designProcessImg2.png";
-import WebelongDesignProcess3 from "/src/images/WeBelong/designProcessImg3.png";
-import WebelongDesignProcess4 from "/src/images/WeBelong/designProcessImg4.png";
-import WebelongDesignProcess5 from "/src/images/WeBelong/designProcessImg5.png";
-import WebelongDesignProcess6 from "/src/images/WeBelong/designProcessImg6.png";
-import WeBelongPSIcon1 from "/src/images/WeBelong/ps_icon1.png";
-import WeBelongPSIcon2 from "/src/images/WeBelong/ps_icon2.png";
-import WeBelongPSIcon3 from "/src/images/WeBelong/ps_icon3.png";
+import NumberComponent from "../../components/NumberComponent";
+import WebelongDesignProcess1 from "../../images/WeBelong/designProcessImg1.png";
+import WebelongDesignProcess2 from "../../images/WeBelong/designProcessImg2.png";
+import WebelongDesignProcess3 from "../../images/WeBelong/designProcessImg3.png";
+import WebelongDesignProcess4 from "../../images/WeBelong/designProcessImg4.png";
+import WebelongDesignProcess5 from "../../images/WeBelong/designProcessImg5.png";
+import WebelongDesignProcess6 from "../../images/WeBelong/designProcessImg6.png";
+import WeBelongPSIcon1 from "../../images/WeBelong/ps_icon1.png";
+import WeBelongPSIcon2 from "../../images/WeBelong/ps_icon2.png";
+import WeBelongPSIcon3 from "../../images/WeBelong/ps_icon3.png";
 
 const ProblemSpaceDetails = ({ icon, heading, description }) => {
   return (

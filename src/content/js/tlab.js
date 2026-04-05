@@ -1,8 +1,8 @@
 import React from "react";
-import NumberComponent from "/src/components/NumberComponent";
-import TlabFlowchart from "/src/images/t-lab/t-lab1.png";
-import TLabMocks from "/src/images/t-lab/t-lab2.png";
-import TlabFinal from "/src/images/t-lab/t-lab3.png";
+import NumberComponent from "../../components/NumberComponent";
+import TlabFlowchart from "../../images/t-lab/t-lab1.png";
+import TLabMocks from "../../images/t-lab/t-lab2.png";
+import TlabFinal from "../../images/t-lab/t-lab3.png";
 const Tlab = () => {
   return (
     <>
